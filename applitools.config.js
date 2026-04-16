@@ -1,6 +1,7 @@
+require('dotenv').config();
 module.exports = {
     testConcurrency: 1,
-    apiKey: "ZzFE1bqEVqGjwx0H3R9NoxoJVN5wTc6ItaUFrtv106X24110",
+    apiKey: process.env.APPLITOOLS_API_KEY,
     batchName: "Todo App",
     browsers: [
         {
